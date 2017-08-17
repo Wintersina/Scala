@@ -1,4 +1,5 @@
 import java.io._
+import Run._
 
 class Point(xc: Int, yc: Int) {
    var x: Int = xc
@@ -12,7 +13,7 @@ class Point(xc: Int, yc: Int) {
    }
 }
 
-class Location(override val xc: Int, override val yc: Int,
+class Location( val xc: Int,  val yc: Int,
    val zc :Int) extends Point(xc, yc){
    var z: Int = zc
 
@@ -28,10 +29,12 @@ class Location(override val xc: Int, override val yc: Int,
 
 object Demo {
    def main(args: Array[String]) {
-      val pt = new Point(5,50);
+      /*val pt = new Point(5,50);
       pt.move(10,10);
 
       val loc = new Location(1,2,3);
       loc.move(5,5,5);
+   */
+      4 times println("sina");
    } 
 }
